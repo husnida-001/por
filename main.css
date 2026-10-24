@@ -836,23 +836,19 @@ html {
     rgba(6, 4, 7, 0.98)
   );
 }
-.footer {
-  display: grid;
-  grid-template-columns: minmax(280px, 1.5fr) minmax(130px, 0.65fr) minmax(
-      210px,
-      0.85fr
-    );
-  align-items: start;
-  gap: 48px;
-  padding: 0 0 44px;
+.site-footer {
+  margin-bottom: 0;
 }
-.footer > div,
-.footer nav {
-  display: flex;
-  flex-direction: column;
-  align-items: flex-start;
-  gap: 13px;
+
+body {
+  margin-bottom: 0;
 }
+
+html,
+body {
+  min-height: 100%;
+}
+
 .footer-kicker {
   color: #ff6b81;
   font:
@@ -861,6 +857,7 @@ html {
   letter-spacing: 0.2em;
 }
 .footer-copy h2 {
+  color: #b8aab0;
   max-width: 400px;
   font:
     600 clamp(32px, 4vw, 48px)/1.12 Arial,
@@ -997,6 +994,9 @@ html {
 .carousel .card {
   scroll-margin-top: 24px;
 }
+
+
+
 .cardd {
   display: flex;
   justify-content: space-between;
@@ -2280,5 +2280,16 @@ header {
     animation-duration: 0.01ms !important;
     transition-duration: 0.01ms !important;
   }
+}
+html,
+body {
+  margin: 0;
+  padding: 0;
+}
+
+.site-footer {
+  margin-bottom: 0;
+  position: relative;
+  z-index: 2;
 }
 
